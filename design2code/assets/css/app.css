@@ -3959,7 +3959,7 @@ button.btn-white {
     position: relative;
     z-index: 1;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
 
 }
 
@@ -3984,7 +3984,7 @@ button.btn-blue {
     position: relative;
     z-index: 1;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
 
 }
 
@@ -4074,8 +4074,7 @@ button.btn-f {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    text-decoration: underline;
-    text-underline-position: under;
+ 
 
 }
 
@@ -4102,7 +4101,8 @@ button.btn-f {
         display:grid;
         row-gap:20px;
         justify-content:center;
-        align-items:center;    }
+        align-items:center;
+        }
 }
 
 .counter-buttons{
@@ -4180,33 +4180,145 @@ button.btn-f {
     text-align: center;
     top:5px;
     z-index:10;
+    background:#ffffff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+    height:100vh;
 }
+
+@media only screen and (max-width: 1000px) {
+    
+.rd{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top:5px;
+    z-index:10;
+    background:#ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: auto;
+}
+
+.rd-form{
+    background:#ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:50px;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+    
+    .rd{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top:5px;
+        z-index:10;
+        background:#ffffff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        height: auto;
+    }
+    
+    .rd-form{
+        background:#ffffff;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:50px;
+    }
+    
+    }
 
 .rd-btn{
     z-index:10;
     background:#ffffff;
     padding-top:0;
-    padding-bottom:40px;
+    padding-bottom:20px;
     display:flex;
     justify-content:end;
-    align-items:center;
-    margin:0 40px;
-    width:50%;
-
-
-
+    align-items:end;
+    width:100%;
 }
 
 .rd-form{
     background:#ffffff;
-    padding:20px;  
+    padding:0px;  
     display:flex;
     flex-direction:column;
     justify-content:start;
     align-items:center;
+    width:65%;
+    height:75%;
 }
+
+.rd-form1{
+    background:#ffffff;
+    padding:0px;  
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:75%;
+
+}
+
+.rd-content{
+}
+
+
+.rd-buttons{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    row-gap:20px;
+    width:100%;
+
+
+}
+
+.rd-input input{
+    border:var(--color-secondary);
+    border:solid;
+    width:100%;
+    height:50px;
+    
+}
+
+.rd-input form{
+    border:var(--color-secondary);
+    border:none;
+    border-radius:26px;
+    background:white;
+}
+
+.rd-input form select{
+    border:var(--color-secondary);
+    border:solid;
+    border-radius:26px;
+    background-color:white;
+}
+
+.rd-input{
+ 
+    width:100%;
+    height:60px;
+}
+
+.abt-icon{
+    width:160px;
+}
+
 
 
 .brand-area-1 {
@@ -8947,6 +9059,7 @@ body.sal-disabled [data-sal|='flip'] {
     border-radius: 5px;
     -webkit-transition: var(--transition);
     transition: var(--transition);
+    height:100%;
 }
 
 .categorie-grid .icon {
@@ -12837,13 +12950,13 @@ body .tpd-size-medium .tpd-content {
     }
 }
 
-.isotop-button button:after {
+/* .isotop-button button:after {
     content: "";
     width: 0;
     height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 10px solid var(--color-secondary);
+    border-top: 10px solid var(--color-sedcondary);
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -12854,7 +12967,7 @@ body .tpd-size-medium .tpd-content {
     -webkit-transition: var(--transition);
     transition: var(--transition);
     z-index: -1;
-}
+} */
 
 @media only screen and (max-width: 575px) {
     .isotop-button button:after {
@@ -12863,7 +12976,7 @@ body .tpd-size-medium .tpd-content {
 }
 
 .isotop-button button:hover, .isotop-button button.is-checked {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     color: var(--color-white);
 }
 
